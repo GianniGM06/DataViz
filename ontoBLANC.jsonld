@@ -1,0 +1,283 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#aPourPere"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Humain"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#seTrouveDans"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Pays"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.co-ode.org/ontologies/ont.owl#Humain"
+    }, {
+      "@id" : "http://www.co-ode.org/ontologies/ont.owl#Pays"
+    }, {
+      "@id" : "http://www.co-ode.org/ontologies/ont.owl#Ville"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#Allemagne",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Pays"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#Femme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Humain"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Homme"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#France",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Pays"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#Homme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Humain"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#Humain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#Jacques_Dupond",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.co-ode.org/ontologies/ont.owl#dateNaissance" : [ {
+    "@value" : "1946-12-25"
+  } ],
+  "http://www.co-ode.org/ontologies/ont.owl#habiteA" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Paris"
+  } ],
+  "http://www.co-ode.org/ontologies/ont.owl#nom" : [ {
+    "@value" : "Dupond"
+  } ],
+  "http://www.co-ode.org/ontologies/ont.owl#prenom" : [ {
+    "@value" : "Jacques"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Homme"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#Marie_Martin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.co-ode.org/ontologies/ont.owl#dateNaissance" : [ {
+    "@value" : "1976-12-17"
+  } ],
+  "http://www.co-ode.org/ontologies/ont.owl#estMarieA" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Paul_Dupond"
+  } ],
+  "http://www.co-ode.org/ontologies/ont.owl#habiteA" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Paris"
+  } ],
+  "http://www.co-ode.org/ontologies/ont.owl#nomJeuneFille" : [ {
+    "@value" : "Martin"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Femme"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#Paris",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.co-ode.org/ontologies/ont.owl#seTrouveDans" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#France"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Ville"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#Paul_Dupond",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.co-ode.org/ontologies/ont.owl#aPourFrere" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Pierre_Dupond"
+  } ],
+  "http://www.co-ode.org/ontologies/ont.owl#aPourPere" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Jacques_Dupond"
+  } ],
+  "http://www.co-ode.org/ontologies/ont.owl#dateNaissance" : [ {
+    "@value" : "1976-05-26"
+  } ],
+  "http://www.co-ode.org/ontologies/ont.owl#estMarieA" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Marie_Martin"
+  } ],
+  "http://www.co-ode.org/ontologies/ont.owl#habiteA" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Paris"
+  } ],
+  "http://www.co-ode.org/ontologies/ont.owl#nom" : [ {
+    "@value" : "Dupond"
+  } ],
+  "http://www.co-ode.org/ontologies/ont.owl#prenom" : [ {
+    "@value" : "Paul"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Homme"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#Pays",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#Pierre_Dupond",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.co-ode.org/ontologies/ont.owl#aPourFrere" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Paul_Dupond"
+  } ],
+  "http://www.co-ode.org/ontologies/ont.owl#aPourPere" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Jacques_Dupond"
+  } ],
+  "http://www.co-ode.org/ontologies/ont.owl#dateNaissance" : [ {
+    "@value" : "1978-08-18"
+  } ],
+  "http://www.co-ode.org/ontologies/ont.owl#habiteA" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Ulm"
+  } ],
+  "http://www.co-ode.org/ontologies/ont.owl#nom" : [ {
+    "@value" : "Dupond"
+  } ],
+  "http://www.co-ode.org/ontologies/ont.owl#prenom" : [ {
+    "@value" : "Pierre"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Homme"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#Ulm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.co-ode.org/ontologies/ont.owl#seTrouveDans" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Allemagne"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#Ville",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#aPourFrere",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Humain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Humain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#aPourPere",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Humain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Humain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#dateNaissance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Humain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#estMarieA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#habiteA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Humain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Ville"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#nom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Humain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#nomJeuneFille",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Humain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#prenom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Humain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#seTrouveDans",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Ville"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#Pays"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+} ]
